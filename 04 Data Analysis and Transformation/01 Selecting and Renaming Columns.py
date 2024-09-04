@@ -97,7 +97,3 @@ countries_regions_df.select('ID','NAME').withColumnRenamed('NAME', 'Continent').
 
 from pyspark.sql.functions import col
 countries_regions_df.select(col('ID'),col('NAME').alias('Continent')).display()
-
-# COMMAND ----------
-
-
